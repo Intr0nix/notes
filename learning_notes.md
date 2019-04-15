@@ -52,6 +52,7 @@
 - **:syntax on** - enables syntax highlighting
 - **:w** - write / save
 - **:q** - quit
+- **:!command** - executes command as if in terminal
 - **i** - enter insert mode
 - **o** -enter insert mode with a new line
 
@@ -84,3 +85,8 @@ $ ./program argument1 argument2
 - **argc** - is 3
 - **argv** - is \[./program, argument1, argument2\]
 
+### PYTHON
+
+#### useful things
+
+- **import sys** - so you can use sys.argv
