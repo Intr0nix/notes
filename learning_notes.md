@@ -149,6 +149,7 @@ $ ./program argument1 argument2
 - **si** - step one instruction
 - **ni** - same as si, but doesnt follow function calls
 - **x/s addr** - prints value at that address
+- **set $rip=0x1234** - change register values
 
 ### radare 2
 
