@@ -103,7 +103,11 @@ $ ./program argument1 argument2
 ### Registers
 
 - **RIP / EIP / IP / PC** - points to the address of the next instruction
-- **EAX** - just a variable
+- **RAX** - 64-Bit Register
+  - **EAX** - lower 32-Bit
+    - **AX** - lower 16-Bit
+      - **AH** - higher 8-Bit
+      - **AL** - lower 8-Bit
 - **RSP / ESP / SP** - stores the address of the top of the stack (?)
 - **FLAGS** - register that stores the flag bits (like Carry flag, Zero flag or Parity flag)
 - **RBP / EBP / BP** - base / starting address of the stack
