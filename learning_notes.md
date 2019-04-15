@@ -57,8 +57,10 @@
 - **i** - enter insert mode
 - **o** - enter insert mode with a new line below your cursor
 - **shift + o** - enter insert mode with a new line above your cursor
-- **yy** - copy line (maybe)
-- **p** - paste line (maybe)
+- **yy** - copy line
+- **p** - paste line
+- **dd** - delete line
+- **shift + v** - highlight multiple lines
 
 ## PROGRAMMING
 
