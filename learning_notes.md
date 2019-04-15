@@ -46,6 +46,8 @@
 
 ### VIM
 
+- **$ vim -o file1 file2** - opens both files split vertically
+  - **ctrl + w + -> / ctrl + w + <-** - change cursor between the files
 - **:set number** - adds line numbers
 - **:syntax on** - enables syntax highlighting
 - **:w** - write / save
