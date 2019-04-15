@@ -150,7 +150,7 @@ $ ./program argument1 argument2
 - **aaa** - analyze and autoname functions
 - **afl** - prints all found functions
 - **?** - for help
-  - **x?** - what you can append to x (x could be a or sth else) and what is does
+  - **x?** - what you can append to x (x could be 'a' or sth else) and what is does
 - **s sym.main** change current location (here to main function)
 - **pdf** - print disassembly of the current function
 - **VV** - enter visual mode to see control graph
