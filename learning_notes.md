@@ -68,7 +68,7 @@
 #### explanation
 
 1. adds standard i/o library
-3. **$USER** - env variable with username
+5. **$USER** - env variable with username
 4. return 0 if no error / return 1 if there was an error
 
 ##### example usage
