@@ -106,14 +106,15 @@ $ ./program argument1 argument2
 ### Assembly
 
 - **mov eax,0x05** - stores value '0x05' in eax
-- **mov eax,\[0x40125\]** - stores value, thats written in address 0x40125 (in memory), in eax
+- **mov eax,\[0x400125\]** - stores value, thats written in address 0x400125 (in memory), in eax
 - **jumps, branches or calls** - used to change the instruction pointer -> control flow
   - **jumps** - unconditional jump
   - **branches** - conditioned with the FLAGS register status bits (e.g. je (jump equal))
   - **calls** - push the current IP on the stack, so the RET can later pop it off and keep going where the CALL left off, and jump
 - **push** - push sth on the stack
 - **pop** - pop the last value of the stack
-  
+- **test eax,eax** - returns 0 if strcmp before had 2x the same string
+- **jne** - jumps if zeroflag is 0
 
 ### Memory
 
@@ -121,5 +122,39 @@ $ ./program argument1 argument2
 
 - **area at the bottom of memory**
 
+### some helpful tools
 
+- **strings** - displays strings of printable characters in files
+- **ltrace** - traces library calls of a program
+- **strace** - traces system calls and signals of a program
+- **objdump -d** - disassembles the whole file
+- **objdump -h** - displays header information
+  - **.text** - where the code is written in memory
+  - **.rodata** - read-only data where the strings are written in memory
+- **binwalk** - for analyzing a binary file
 
+### gdb
+
+- **set disassembly-flavor intel** - intel syntax
+- **disassemble main** - shows assembler code for main function
+- **break \*main** - sets breakpoint at the start of main function
+- **break \*addr** - sets breakpoint at the address
+- **run (arguments)** - starts the program
+- **info registers** - displays content of registers
+- **si** - step one instruction
+- **ni** - same as si, but doesnt follow function calls
+- **x/s addr** - prints value at that address
+
+### radare 2
+
+- **aaa** - analyze and autoname functions
+- **afl** - prints all found functions
+- **?** - for help
+  -**a?** - what you can append and what is does
+- **s sym.main** change current location (here to main function)
+- **pdf** - print disassembly of the current function
+- **VV** - enter visual mode to see control graph
+  - **arrow keys** - move "camera" around
+  - **tab** - select other blocks
+  - **shift + h/j/k/l** - move block around
+  - **p** - cycle through different representations
