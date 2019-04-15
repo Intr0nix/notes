@@ -28,7 +28,7 @@
 
 ### PIPES
 
-**cat xyz | grep 123** - only shows lines of xyz, containing 123
+**cat file | grep xyz** - only shows lines of file, containing "xyz"
 
 ### INTERESTING FILES
 
