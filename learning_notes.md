@@ -62,8 +62,8 @@
 <code>
   <p> 1. \#include &ltstdio.h&gt </p> 
   <p> 2.  int main(int argc, char *argv[]) { </p>
-  <p> 3.    printf("$USER"); </p>
-  <p> 4.    return 0;   </p>
+  <p> 3.  &nbsp;&nbsp;printf("$USER"); </p>
+  <p> 4.  &nbsp;&nbsp;return 0;   </p>
   <p> 5. } </p> 
 </code>
 
