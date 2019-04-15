@@ -60,11 +60,11 @@
 #### example Program
 
 <code>
-1. \#include <stdio.h> <br />
-2.  int main(int argc, char *argv[]) { <br />
-3.    printf("$USER"); <br />
-4.    return 0;   <br />
-5. } <br />
+  <p> 1. \#include <stdio.h> </p> 
+  <p> 2.  int main(int argc, char *argv[]) { </p>
+  <p> 3.    printf("$USER"); </p>
+  <p> 4.    return 0;   </p>
+  <p> 5. } </p> 
 </code>
 
 #### explanation
