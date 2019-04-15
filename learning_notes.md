@@ -59,11 +59,13 @@
 
 #### example Program
 
-1.<code> \#include <stdio.h>
-2.  int main(int argc, char *argv[]) {
-3.    printf("$USER");
-4.    return 0;  
-5. }</code>
+<code>
+1. \#include <stdio.h> <br />
+2.  int main(int argc, char *argv[]) { <br />
+3.    printf("$USER"); <br />
+4.    return 0;   <br />
+5. } <br />
+</code>
 
 #### explanation
 
