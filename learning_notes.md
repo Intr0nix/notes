@@ -53,8 +53,10 @@
 - **:w** - write / save
 - **:q** - quit
 - **:!command** - executes command as if in terminal
+  -**:!python %** - executes the current file (python)
 - **i** - enter insert mode
-- **o** -enter insert mode with a new line
+- **o** - enter insert mode with a new line below your cursor
+- **shift + o** - enter insert mode with a new line above your cursor
 
 ## PROGRAMMING
 
@@ -83,10 +85,10 @@ $ gcc program.c -o program -Wall
 $ ./program argument1 argument2
 
 - **argc** - is 3
-- **argv** - is \[./program, argument1, argument2\]
+- **argv** - is \[program, argument1, argument2\]
 
 ### PYTHON
 
 #### useful things
 
-- **import sys** - so you can use sys.argv
+- **import sys** - so you can use sys.argv or write to stderr
