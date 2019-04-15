@@ -46,8 +46,8 @@
 
 ### VIM
 
--**:set number** - adds line numbers
--**:syntax on** - enables syntax highlighting
+- **:set number** - adds line numbers
+- **:syntax on** - enables syntax highlighting
 - **:w** - write / save
 - **:q** - quit
 - **i** - enter insert mode
@@ -59,11 +59,11 @@
 
 #### example Program
 
-1. \#include <stdio.h>
+1.<code> \#include <stdio.h>
 2.  int main(int argc, char *argv[]) {
 3.    printf("$USER");
 4.    return 0;  
-5. }
+5. }</code>
 
 #### explanation
 
