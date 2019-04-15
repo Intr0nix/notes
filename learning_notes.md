@@ -60,7 +60,7 @@
 #### example Program
 
 <code>
-  <p> 1. \#include '<stdio.h>' </p> 
+  <p> 1. \#include %3Cstdio.h%3E </p> 
   <p> 2.  int main(int argc, char *argv[]) { </p>
   <p> 3.    printf("$USER"); </p>
   <p> 4.    return 0;   </p>
