@@ -25,6 +25,8 @@
 - **find** - shows location of a file
 - **wget** - get webpage as text
 - **chmod** - change permissions of a file
+- **env** - shows environment variables
+- **file** - outputs type of file
 
 ### PIPES
 
@@ -32,10 +34,47 @@
 
 ### INTERESTING FILES
 
-- **.bashrc** -
+- **~/.bashrc** - will be executed everytime the terminal is opened
+- **~/.vimrc** - same as bashrc but with vim instead of the terminal
+- **/etc/passwd** - local linux users
+- **/etc/shadow** - local password hashes
+- **/etc/group** - local account groups
+- **/etc/hostname** - system hostname
+- **/etc/profile** - system environment variables
+- **~/.ssh/** - ssh files/keys
+- **~/.bash_history** - users bash history
+
+### VIM
+
+-**:set number** - adds line numbers
+-**:syntax on** - enables syntax highlighting
+- **:w** - write / save
+- **:q** - quit
+- **i** - enter insert mode
+- **o** -enter insert mode with a new line
 
 ## PROGRAMMING
 
 ### C
 
+#### example Program
+
+1. \#include <stdio.h>
+2.  int main(int argc, char *argv[]) {
+3.    printf("$USER");
+4.    return 0;  
+5. }
+
+#### explanation
+
+1. adds standard i/o library
+3. **$USER** - env variable with username
+4. return 0 if no error / return 1 if there was an error
+
+##### example usage
+
+$ ./program argument1 argument2
+
+- **argc** - is 3
+- **argv** - is \[./program, argument1, argument2\]
 
