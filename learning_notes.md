@@ -57,6 +57,8 @@
 - **i** - enter insert mode
 - **o** - enter insert mode with a new line below your cursor
 - **shift + o** - enter insert mode with a new line above your cursor
+- **yy** - copy line (maybe)
+- **p** - paste line (maybe)
 
 ## PROGRAMMING
 
@@ -101,7 +103,8 @@ $ ./program argument1 argument2
 - **RIP / EIP / IP / PC** - points to the address of the next instruction
 - **EAX** - just a variable
 - **RSP / ESP / SP** - stores the address of the top of the stack (?)
-- **FLAGS** - register that stores the flag bits (like Carry flag, Zero flag or Parity flag) 
+- **FLAGS** - register that stores the flag bits (like Carry flag, Zero flag or Parity flag)
+- **RBP / EBP / BP** - base / starting address of the stack
 
 ### Assembly
 
@@ -169,3 +172,16 @@ $ ./program argument1 argument2
   - **:dc** - runs the program
   - **s** - step instruction
   - **shift + s** - step instruction without following function calls
+- **dr** - displays content of registers
+  - **dr rip=0x01** - set rip 0x01
+- **afvn previous_name new_name** - change variable name (old one was set by radare2)
+- **ood arguments** - reload the binary
+- **V!** switch to 'debugging overview'?
+
+### hide password from strings command
+
+#### idea:
+loop over the password and add the hex values of the ascii characters, if the sum is the same as the right password, its correct
+
+#### problem:
+others are correct as well and its easy to reverse the algorithm and then bruteforce correct passwords
