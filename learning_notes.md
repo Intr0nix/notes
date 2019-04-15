@@ -59,17 +59,17 @@
 
 #### example Program
 
-1. \#include &lt;stdio.h&gt;<br/>
-2.  int main(int argc, char *argv[]) {<br/>
-3.  &nbsp;&nbsp;printf("$USER");<br/>
-4.  &nbsp;&nbsp;return 0;<br/>
-5. }
+1 \#include &lt;stdio.h&gt;<br/>
+2  int main(int argc, char *argv[]) {<br/>
+3  &nbsp;&nbsp;printf("$USER");<br/>
+4  &nbsp;&nbsp;return 0;<br/>
+5 }
 
 #### explanation
 
-1. adds standard i/o library
-5. **$USER** - env variable with username
-4. return 0 if no error / return 1 if there was an error
+line 1: adds standard i/o library
+line 3: **$USER** - env variable with username
+line 4: return 0 if no error / return 1 if there was an error
 
 ##### example usage
 
