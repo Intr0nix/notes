@@ -158,3 +158,14 @@ $ ./program argument1 argument2
   - **tab** - select other blocks
   - **shift + h/j/k/l** - move block around
   - **p** - cycle through different representations
+  - **?** - displays help
+  - **shift + r** - randomize colors
+
+#### disassemble
+**$ r2 -d file**
+
+- **db addr** - set breakpoint at address
+- **VV**
+  - **:dc** - runs the program
+  - **s** - step instruction
+  - **shift + s** - step instruction without following function calls
