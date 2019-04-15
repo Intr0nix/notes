@@ -61,14 +61,14 @@
 
 1 \#include &lt;stdio.h&gt;<br/>
 2  int main(int argc, char *argv[]) {<br/>
-3  &nbsp;&nbsp;printf("$USER");<br/>
-4  &nbsp;&nbsp;return 0;<br/>
+3  &nbsp;&nbsp;&nbsp;&nbsp;printf("$USER");<br/>
+4  &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>
 5 }
 
 #### explanation
 
-line 1: adds standard i/o library
-line 3: **$USER** - env variable with username
+line 1: adds standard i/o library<br/>
+line 3: **$USER** - env variable with username<br/>
 line 4: return 0 if no error / return 1 if there was an error
 
 ##### example usage
