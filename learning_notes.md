@@ -120,7 +120,7 @@ $ ./program argument1 argument2
 
 #### Stack
 
-- **area at the bottom of memory**
+- area at the bottom of memory
 
 ### some helpful tools
 
