@@ -71,7 +71,11 @@ line 1: adds standard i/o library<br/>
 line 3: **$USER** - env variable with username<br/>
 line 4: return 0 if no error / return 1 if there was an error
 
-##### example usage
+#### compile
+
+$ gcc program.c -o program -Wall
+
+#### example usage
 
 $ ./program argument1 argument2
 
