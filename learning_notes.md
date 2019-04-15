@@ -91,4 +91,6 @@ $ ./program argument1 argument2
 
 #### useful things
 
+- **#!/usr/bin/python2.7** - can start the program like every other one (./program)
 - **import sys** - so you can use sys.argv or write to stderr
+
