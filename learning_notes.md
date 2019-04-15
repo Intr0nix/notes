@@ -59,11 +59,11 @@
 
 #### example Program
 
-<p> 1. \#include &ltstdio.h&gt </p> 
-<p> 2.  int main(int argc, char *argv[]) { </p>
-<p> 3.  &nbsp;&nbsp;printf("$USER"); </p>
-<p> 4.  &nbsp;&nbsp;return 0;   </p>
-<p> 5. } </p> 
+1. \#include &ltstdio.h&gt<br/>
+2.  int main(int argc, char *argv[]) {<br/>
+3.  &nbsp;&nbsp;printf("$USER");<br/>
+4.  &nbsp;&nbsp;return 0;<br/>
+5. }
 
 #### explanation
 
