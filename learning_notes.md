@@ -94,3 +94,32 @@ $ ./program argument1 argument2
 - **#!/usr/bin/python2.7** - can start the program like every other one (./program)
 - **import sys** - so you can use sys.argv or write to stderr
 
+##Things to know
+
+###Registers
+
+- **RIP / EIP / IP / PC** - points to the address of the next instruction
+- **EAX** - just a variable
+- **RSP / ESP / SP** - stores the address of the top of the stack (?)
+- **FLAGS** - register that stores the flag bits (like Carry flag, Zero flag or Parity flag) 
+
+###Assembly
+
+- **mov eax,0x05** - stores value '0x05' in eax
+- **mov eax,\[0x40125\]** - stores value, thats written in address 0x40125 (in memory), in eax
+- **jumps, branches or calls** - used to change the instruction pointer -> control flow
+  - **jumps** - unconditional jump
+  - **branches** - conditioned with the FLAGS register status bits (e.g. je (jump equal))
+  - **calls** - push the current IP on the stack, so the RET can later pop it off and keep going where the CALL left off, and jump
+- **push** - push sth on the stack
+- **pop** - pop the last value of the stack
+  
+
+###Memory
+
+####Stack
+
+- **area at the bottom of memory**
+
+
+
