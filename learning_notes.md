@@ -1,4 +1,4 @@
-# NOTES
+# LEARNING NOTES
 
 ## LINUX
 
