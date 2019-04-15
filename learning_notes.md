@@ -19,6 +19,11 @@
 - **ps aux** - process information
 - **id** - current user id
 - **hexdump** - data in hex
+- **grep** - filter output
 
-## BINARY EXPLOITATION
+### PIPES
+
+**cat xyz | grep 123** - only shows lines of xyz, containing 123
+
+
 
