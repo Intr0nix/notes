@@ -59,7 +59,7 @@
 
 #### example Program
 
-1. \#include &ltstdio.h&gt<br/>
+1. \#include &lt;stdio.h&gt;<br/>
 2.  int main(int argc, char *argv[]) {<br/>
 3.  &nbsp;&nbsp;printf("$USER");<br/>
 4.  &nbsp;&nbsp;return 0;<br/>
