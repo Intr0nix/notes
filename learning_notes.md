@@ -174,6 +174,9 @@ $ ./program argument1 argument2
 - **define hook-stop** - executes every command, given after this one, every step
 - **x/wx $esp+0x5c** - displays byte, written in that address
 - **x function** - shows the starting address of the function and the first byte
+- **x/1i $eip** - examine 1 instruction at the instruction pointer
+- **x/8wx $esp** - examine 8 words as hex at the stack pointer
+- **x/s $esp** - examine stack as string
 
 ### radare 2
 
@@ -252,3 +255,12 @@ others are correct as well and its easy to reverse the algorithm and then brutef
 #### buffer overflow -> redirecting the program
 
 - ebp and eip are stored on the stack, so when you overwrite the whole stack, you are able to change the values, that will be poped into ebp and eip and therefore control the instruction pointer.
+
+#### buffer overflow -> code execution
+
+- overwrite the instruction pointer value on the stack to a memory address that will hit your code.
+- because memory addresses may differ a little, use a nop slide (many nops before your actual code) and set the instruction pointer
+  value to a memory address that will likely hit your nop slide.
+- place the shellcode right after the nop slide
+- shell will instantly close, so you have to do:
+  **$ (python exploit.py ; cat) | program**
