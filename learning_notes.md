@@ -69,7 +69,7 @@
 
 #### example Program
 
-```
+```C
 1 \#include <stdio.h>
 2  int main(int argc, char *argv[]) {
 3     printf("$USER");
