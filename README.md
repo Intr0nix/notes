@@ -5,7 +5,11 @@
 - **[LINUX](#linux)**
 - **[PROGRAMMING](#programming)**
 - **[STUFF](#stuff-just-collecting-atm)**
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 ## LINUX
 
 ### SOME COMMANDS
@@ -69,11 +73,11 @@
 - **p** - paste line
 - **dd** - delete line
 - **shift + v** - highlight multiple lines
-
-
-
-
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 ## PROGRAMMING
 
 ### C
@@ -278,11 +282,11 @@ with open("file.txt","w") as textfile:
 - **struct.unpack("I", "ABCD")\[0\]** - ASCII to decimal
 - **hex(struct.unpack(">I", "ABCD")\[0\])** - ASCII to hex (> is for changing the order of the hex numbers)
 - **struct.pack("I", 0x41500000)** - hex to ASCII
-
-
-
-
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 ## STUFF (just collecting atm)
 
 ### Registers
