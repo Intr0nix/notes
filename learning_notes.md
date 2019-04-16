@@ -105,6 +105,7 @@ $ ./program argument1 argument2
 
 #### convert numbers
 
+- **chr(0x41)** - hex to ASCII
 - **hex(123)** - decimal to hex
 - **bin(123)** - decimal to binary
 - **int('1111',2)** - binary to decimal
@@ -172,6 +173,7 @@ $ ./program argument1 argument2
 - **info proc mappings** - show mapped address spaces
 - **define hook-stop** - executes every command, given after this one, every step
 - **x/wx $esp+0x5c** - displays byte, written in that address
+- **x function** - shows the starting address of the function and the first byte
 
 ### radare 2
 
