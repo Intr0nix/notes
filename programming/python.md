@@ -132,3 +132,26 @@ def name(n):
 
 ## Classes
 
+```PYTHON
+
+class Car(object):
+  def __init__(self,wheel1,wheel2,wheel3,wheel4):
+    self.wheel1 = wheel1
+    self.wheel2 = wheel2
+    self.wheel3 = wheel3
+    self.wheel4 = wheel4
+
+```
+
+## File I/O
+
+- **my_file = open("file.txt","r")** - r = read, w = write, r+ = both
+- **print my_file.readline()** => returns first line
+  - **print my_file.readline()** => returns next line
+- **my_file.close()** - important when done with file
+- **my_file.closed** - returns if file is closed
+```PYTHON
+with open("file.txt","w") as textfile:
+  textfile.write("string")
+```
+**=> write string to file**
