@@ -1,2 +1,3 @@
 # notes
-learning notes
+
+notes from things I learned
