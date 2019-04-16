@@ -1,3 +1,3 @@
 # notes
 
-notes from things I learned
+notes of things I learned
