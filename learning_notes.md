@@ -101,7 +101,7 @@ $ ./program argument1 argument2
 
 - **#!/usr/bin/python2.7** - can start the program like every other one (./program)
 - **import sys** - so you can use sys.argv or write to stderr
-- **python -c 'print "A"*(4+16*3+14)'** - prints A 4+16\*3+14 times
+- **python -c 'print "A"\*(4+16\*3+14)'** - prints A 4+16\*3+14 times
 
 #### convert numbers
 
@@ -243,3 +243,6 @@ others are correct as well and its easy to reverse the algorithm and then brutef
 
 #### buffer overflow
 
+- Buffer: 64Bit
+- Input: 72Bit
+- => The Byte thats too long will get written on the stack, even though the buffer is to small, so you can overwrite other variables
