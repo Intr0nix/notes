@@ -248,3 +248,7 @@ others are correct as well and its easy to reverse the algorithm and then brutef
 - Buffer: 64Bit
 - Input: 72Bit
 - => The Byte thats too long will get written on the stack, even though the buffer is to small, so you can overwrite other variables
+
+#### buffer overflow -> redirecting the program
+
+- ebp and eip are stored on the stack, so when you overwrite the whole stack, you are able to change the values, that will be poped into ebp and eip and therefore control the instruction pointer.
