@@ -101,6 +101,16 @@ $ ./program argument1 argument2
 - **#!/usr/bin/python2.7** - can start the program like every other one (./program)
 - **import sys** - so you can use sys.argv or write to stderr
 
+#### convert numbers
+
+- **hex(123)** - decimal to hex
+- **bin(123)** - decimal to binary
+- **int('1111',2)** - binary to decimal
+- **hex(int('1111',2)** - binary to hex
+- **struct.unpack("I", "ABCD")\[0\]** - ASCII to decimal
+- **hex(struct.unpack(">I", "ABCD")\[0\])** - ASCII to hex (> is for changing the order of the hex numbers)
+- **struct.pack("I", 0x41500000)** - hex to ASCII
+
 ## STUFF (just collecting atm)
 
 ### Registers
@@ -195,3 +205,20 @@ loop over the password and add the hex values of the ascii characters, if the su
 
 #### problem:
 others are correct as well and its easy to reverse the algorithm and then bruteforce correct passwords
+
+### Kernel
+
+#### Privileges
+
+- **User mode** - privilege level 3
+- **Kernel mode** - privilege level 0
+
+#### Syscalls
+
+- fundamental interface between an application and the linux kernel
+- used to execute operations on privilege level 0
+- to use you have to write your values into the right register then invoke the syscall
+
+#### MMU
+
+- translates between virtual and physical memory addresses
