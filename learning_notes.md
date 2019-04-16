@@ -1,4 +1,4 @@
-# LEARNING NOTES
+# NEW NOTES
 
 ## STUFF (just collecting atm)
 
