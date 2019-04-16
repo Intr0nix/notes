@@ -28,6 +28,7 @@
 - **env** - shows environment variables
 - **file** - outputs type of file
 - **sudo &lt;command&gt;** - execute &lt;command&gt; as superuser/root
+- **whereis** - shows path to that file
 
 ### PIPES
 
@@ -100,6 +101,7 @@ $ ./program argument1 argument2
 
 - **#!/usr/bin/python2.7** - can start the program like every other one (./program)
 - **import sys** - so you can use sys.argv or write to stderr
+- **python -c 'print "A"*(4+16*3+14)'** - prints A 4+16\*3+14 times
 
 #### convert numbers
 
@@ -121,14 +123,14 @@ $ ./program argument1 argument2
     - **AX** - lower 16-Bit   
       - **AH** - higher 8-Bit
       - **AL** - lower 8-Bit
-- **RSP / ESP / SP** - stores the address of the top of the stack (?)
+- **RSP / ESP / SP** - stores the address of the top of the stack
 - **FLAGS** - register that stores the flag bits (like Carry flag, Zero flag or Parity flag)
 - **RBP / EBP / BP** - base / starting address of the stack
 
 ### Assembly
 
 - **mov eax,0x05** - stores value '0x05' in eax
-- **mov eax,\[0x400125\]** - stores value, thats written in address 0x400125 (in memory), in eax
+- **mov eax,\[0x400125\]** - stores value?, thats written in address 0x400125 (in memory), in eax
 - **jumps, branches or calls** - used to change the instruction pointer -> control flow
   - **jumps** - unconditional jump
   - **branches** - conditioned with the FLAGS register status bits (e.g. je (jump equal))
@@ -167,6 +169,9 @@ $ ./program argument1 argument2
 - **ni** - same as si, but doesnt follow function calls
 - **x/s addr** - prints value at that address
 - **set $rip=0x1234** - change register values
+- **info proc mappings** - show mapped address spaces
+- **define hook-stop** - executes every command, given after this one, every step
+- **x/wx $esp+0x5c** - displays byte, written in that address
 
 ### radare 2
 
@@ -222,3 +227,19 @@ others are correct as well and its easy to reverse the algorithm and then brutef
 #### MMU
 
 - translates between virtual and physical memory addresses
+
+### exploitation
+
+#### Shell
+
+- **echo $SHELL** - displays what shell is being used
+- **/bin/bash** - better shell
+- **$ echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py<br/>**
+  **$ python /tmp/asdf.py** - also spawn better shell
+  
+#### setuid
+
+- **-rwsr-xr-x** - s is setuid bit, its set so this program will be run as the owner of the file
+
+#### buffer overflow
+
