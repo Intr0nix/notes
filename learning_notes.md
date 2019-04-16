@@ -70,10 +70,10 @@
 #### example Program
 
 ```
-1 \#include &lt;stdio.h&gt;
+1 \#include <stdio.h>
 2  int main(int argc, char *argv[]) {
-3  &nbsp;&nbsp;&nbsp;&nbsp;printf("$USER");
-4  &nbsp;&nbsp;&nbsp;&nbsp;return 0;
+3     printf("$USER");
+4     return 0;
 5 }
 ```
 
