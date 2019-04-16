@@ -18,7 +18,7 @@
 
 ## Userinput
 
-- **variable = raw_input("What is your name?")
+- **variable = raw_input("What is your name?")**
 
 ## Date/Time
 
@@ -28,15 +28,14 @@
 - **now.year** => 2018
 - **now.month** => 2
 - **now.day** => 12
-- **print "%s/%s/%s"%(now.month,now.day,now.year)** => 2/12/2018
 
 ## Conditionals and Control Flow
 
-- **==** - equal to
-- **!=** - not equal to
-- **&lt;** - less than
-- **&lt;=** - less than or equal to
-- **&gt;** - greater than
-- **&gt;=** - greater than or equal to
+- **'=='** - equal to
+- **'!='** - not equal to
+- **'&lt;'** - less than
+- **'&lt;='** - less than or equal to
+- **'&gt;'** - greater than
+- **'&gt;='** - greater than or equal to
 
 ## Boolean Operators
