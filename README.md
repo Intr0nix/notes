@@ -4,7 +4,7 @@
 
 - **[LINUX](#linux)**
 - **[PROGRAMMING](#programming)**
-- **[STUFF](#stuff)**
+- **[STUFF](#stuff-just-collecting-atm)**
 
 ## LINUX
 
@@ -69,6 +69,10 @@
 - **p** - paste line
 - **dd** - delete line
 - **shift + v** - highlight multiple lines
+
+
+
+
 
 ## PROGRAMMING
 
@@ -274,6 +278,10 @@ with open("file.txt","w") as textfile:
 - **struct.unpack("I", "ABCD")\[0\]** - ASCII to decimal
 - **hex(struct.unpack(">I", "ABCD")\[0\])** - ASCII to hex (> is for changing the order of the hex numbers)
 - **struct.pack("I", 0x41500000)** - hex to ASCII
+
+
+
+
 
 ## STUFF (just collecting atm)
 
