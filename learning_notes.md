@@ -27,6 +27,7 @@
 - **chmod** - change permissions of a file
 - **env** - shows environment variables
 - **file** - outputs type of file
+- **sudo &lt;command&gt;** - execute &lt;command&gt; as superuser/root
 
 ### PIPES
 
