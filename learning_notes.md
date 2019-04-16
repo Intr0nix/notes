@@ -54,7 +54,7 @@
 - **:w** - write / save
 - **:q** - quit
 - **:!command** - executes command as if in terminal
-  -**:!python %** - executes the current file (python)
+  - **:!python %** - executes the current file (python)
 - **i** - enter insert mode
 - **o** - enter insert mode with a new line below your cursor
 - **shift + o** - enter insert mode with a new line above your cursor
