@@ -69,11 +69,13 @@
 
 #### example Program
 
-1 \#include &lt;stdio.h&gt;<br/>
-2  int main(int argc, char *argv[]) {<br/>
-3  &nbsp;&nbsp;&nbsp;&nbsp;printf("$USER");<br/>
-4  &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>
+```
+1 \#include &lt;stdio.h&gt;
+2  int main(int argc, char *argv[]) {
+3  &nbsp;&nbsp;&nbsp;&nbsp;printf("$USER");
+4  &nbsp;&nbsp;&nbsp;&nbsp;return 0;
 5 }
+```
 
 #### explanation
 
