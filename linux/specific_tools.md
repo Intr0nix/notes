@@ -67,4 +67,4 @@
   - **dr rip=0x01** - set rip 0x01
 - **afvn previous_name new_name** - change variable name (old one was set by radare2)
 - **ood arguments** - reload the binary
-- **V!** switch to 'debugging overview'?
+- **V!** switch to 'debugging overview'
