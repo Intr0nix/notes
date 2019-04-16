@@ -2,12 +2,8 @@
 
 ## Essentials
 
-**%s acts as a placeholder for a string, while %d acts as a placeholder for a number**
-
-- **my_name = "name"** - Variable 
-- **my_list = \["ele1","ele2"\]** - List
-- **"string"\[1\]** - => t
-- **print "hey " + "its " + "me"** - string concatenation
+- **my_name = "name"** - Variable
+**%s acts as a placeholder for a string, while %d acts as a placeholder for a number** 
 
 ## interesting functions
 
@@ -77,8 +73,10 @@ else:
   print "wont happen"
 ```
 
-## More things with strings
+## Strings
 
+- **"string"\[1\]** - => t
+- **print "hey " + "its " + "me"** - string concatenation
 - **var = "test123"**
   - **var.isalpha()** => false (true if only letters)
 - **var\[4:len(var)\]** => 123
@@ -100,6 +98,7 @@ def name(n):
 
 ## Lists
 
+- **my_list = \["ele1","ele2"\]** - List
 - **my_list\[3:5\]** - returns element 3 to 5-1=4
 - **my_list.index('element1')** - returns index of the given element
 - **my_list.insert(index,'string')** - inserts element with given string in given index
