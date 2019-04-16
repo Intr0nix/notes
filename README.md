@@ -1,3 +1,3 @@
 # notes
 
-notes of things I learned
+[test](notes/README.md#notes)
