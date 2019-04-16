@@ -2,7 +2,7 @@
 
 ## Essentials
 
-- **my_name = "name"** - Variable
+- **my_name = "name"** - Variable  
 **%s acts as a placeholder for a string, while %d acts as a placeholder for a number** 
 
 ## interesting functions
