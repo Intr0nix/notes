@@ -150,8 +150,8 @@ class Car(object):
   - **print my_file.readline()** => returns next line
 - **my_file.close()** - important when done with file
 - **my_file.closed** - returns if file is closed
+- **write sth to a file:**
 ```PYTHON
 with open("file.txt","w") as textfile:
   textfile.write("string")
 ```
-**=> write string to file**
