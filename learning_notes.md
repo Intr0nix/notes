@@ -177,6 +177,7 @@ $ ./program argument1 argument2
 - **x/1i $eip** - examine 1 instruction at the instruction pointer
 - **x/8wx $esp** - examine 8 words as hex at the stack pointer
 - **x/s $esp** - examine stack as string
+- **find start_addr, +9999999, "string"** - displays addresses in that memory field, that contain the given string
 
 ### radare 2
 
@@ -252,11 +253,11 @@ others are correct as well and its easy to reverse the algorithm and then brutef
 - Input: 72Bit
 - => The Byte thats too long will get written on the stack, even though the buffer is to small, so you can overwrite other variables
 
-#### buffer overflow -> redirecting the program
+##### buffer overflow -> redirecting the program
 
 - ebp and eip are stored on the stack, so when you overwrite the whole stack, you are able to change the values, that will be poped into ebp and eip and therefore control the instruction pointer.
 
-#### buffer overflow -> code execution
+##### buffer overflow -> code execution
 
 - overwrite the instruction pointer value on the stack to a memory address that will hit your code.
 - because memory addresses may differ a little, use a nop slide (many nops before your actual code) and set the instruction pointer
@@ -264,3 +265,13 @@ others are correct as well and its easy to reverse the algorithm and then brutef
 - place the shellcode right after the nop slide
 - shell will instantly close, so you have to do:
   **$ (python exploit.py ; cat) | program**
+  
+- if you are not allowed to ret to the stack, you can ret to the ret itself and then when the ret is executed again, it will get the 
+  stack pointer from the stack, and use it for the instruction pointer so you will be able to jump to the stack again
+  
+##### ret2libc
+
+- find the string **/bin/sh** with the command: **string -a -t x /lib/libc-\*.\*\*.\*.so | grep "/bin/sh"** (\* -> version number)
+- then add the offset to the starting addr to get the memory addr where the string is written
+- then write this address to the stack, so it will used for the instruction pointer after the ret
+- remember to use **$ (python exploit.py ; cat) | program** if needed
