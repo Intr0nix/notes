@@ -154,3 +154,20 @@ class Car(object):
 with open("file.txt","w") as textfile:
   textfile.write("string")
 ```
+
+## Useful things
+
+- **#!/usr/bin/python2.7** - can start the program like every other one (./program)
+- **import sys** - so you can use sys.argv or write to stderr
+- **python -c 'print "A"\*(4+16\*3+14)'** - prints A 4+16\*3+14 times
+
+## Number conversions
+
+- **chr(0x41)** - hex to ASCII
+- **hex(123)** - decimal to hex
+- **bin(123)** - decimal to binary
+- **int('1111',2)** - binary to decimal
+- **hex(int('1111',2)** - binary to hex
+- **struct.unpack("I", "ABCD")\[0\]** - ASCII to decimal
+- **hex(struct.unpack(">I", "ABCD")\[0\])** - ASCII to hex (> is for changing the order of the hex numbers)
+- **struct.pack("I", 0x41500000)** - hex to ASCII
