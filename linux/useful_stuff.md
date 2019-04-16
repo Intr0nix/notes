@@ -42,3 +42,14 @@
 - **/etc/profile** - system environment variables
 - **~/.ssh/** - ssh files/keys
 - **~/.bash_history** - users bash history
+
+## Useful tools
+
+- **strings** - displays strings of printable characters in files
+- **ltrace** - traces library calls of a program
+- **strace** - traces system calls and signals of a program
+- **objdump -d** - disassembles the whole file
+- **objdump -h** - displays header information
+  - **.text** - where the code is written in memory
+  - **.rodata** - read-only data where the strings are written in memory
+- **binwalk** - for analyzing a binary file
