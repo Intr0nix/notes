@@ -37,6 +37,10 @@
 
 - area at the (bottom / top) ? of memory
 
+#### Heap
+
+- ?
+
 ### hide password from strings command
 
 #### idea:
