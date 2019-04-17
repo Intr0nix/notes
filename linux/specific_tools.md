@@ -38,6 +38,7 @@
 - **x/8wx $esp** - examine 8 words as hex at the stack pointer
 - **x/s $esp** - examine stack as string
 - **find start_addr, +9999999, "string"** - displays addresses in that memory field, that contain the given string
+- **set {int}addr = value** - change value of given addr
 
 ## radare 2
 
