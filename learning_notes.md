@@ -31,11 +31,23 @@
 - **test eax,eax** - returns 0 if strcmp before had 2x the same string
 - **jne** - jumps if zeroflag is 0
 
+#### Function calls
+
+- **32-Bit** - parameters are saved on the stack
+- **64-Bit** - parameters are saved in registers
+  - **if too many parameters** - first parameters are saved in registers, rest on the stack
+
 ### Memory
+
+#### ASLR
+
+- **Address space layout randomization**
+- without ASLR 32Bit Code is at 80...h
+- without ASLR 64Bit Code is at 40...h
 
 #### Stack
 
-- area at the (bottom / top) ? of memory
+- **bffff...h** - memory addr frame
 
 #### Heap
 
@@ -107,3 +119,19 @@ others are correct as well and its easy to reverse the algorithm and then brutef
 - then add the offset to the starting addr to get the memory addr where the string is written
 - then write this address to the stack, so it will used for the instruction pointer after the ret
 - remember to use **$ (python exploit.py ; cat) | program** if needed
+
+#### Format string exploit
+
+- With **printf()** you can use **'%x / %s / %d'** to leak values from the stack
+- first spam many **%x** until you find the place of the stack, where your input will be stored
+- then you know the **%x** padding until your input shows up
+- you can then find the address of a variable for example and write it as input
+- then you can use **%n** to write to that address and therefore change the value of the variable
+
+### Global Offset Table
+
+- has the addresses of different functions
+
+### Global Linkage Table
+
+- pushes the index on the stack, then starts the linking process which will look up the address value in the Global Offset Table
