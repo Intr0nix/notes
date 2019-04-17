@@ -134,4 +134,4 @@ others are correct as well and its easy to reverse the algorithm and then brutef
 
 ### Global Linkage Table
 
-- pushes the index on the stack, then starts the linking process which will look up the address value in the Global Offset Table
+- pushes the index on the stack, then starts the linking process which will find the address of the function and update the Global Offset Table, then it will also execute the function
