@@ -16,6 +16,10 @@
 
 ### Assembly
 
+- **INT 3** - or CCh; is the actual breakpoint instruction => gdb will overwrite the actual instruction to int 3 when you set a breakpoint
+- **NOP** - nop = 90h; nop is a instruction that does nothing, useful for nopslides
+  - **nopslide** - when you dont know the exact address of your shellcode you can do many nops before that so that you have a higher chance of hitting the nopslide that will lead to your shellcode
+- **int 80** - used to invoke a syscall
 - **mov eax,0x05** - stores value '0x05' in eax
 - **mov eax,\[0x400125\]** - stores value?, thats written in address 0x400125 (in memory), in eax
 - **jumps, branches or calls** - used to change the instruction pointer -> control flow
