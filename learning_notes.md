@@ -42,12 +42,12 @@
 #### ASLR
 
 - **Address space layout randomization**
-- without ASLR 32Bit Code is at 80...h
-- without ASLR 64Bit Code is at 40...h
+- without ASLR 32Bit Code is at 0x80...
+- without ASLR 64Bit Code is at 0x40...
 
 #### Stack
 
-- **bffff...h** - memory addr frame
+- **0xbffff...** - memory addr frame
 
 #### Heap
 
@@ -127,10 +127,16 @@ others are correct as well and its easy to reverse the algorithm and then brutef
 - then you know the **%x** padding until your input shows up
 - you can then find the address of a variable for example and write it as input
 - then you can use **%n** to write to that address and therefore change the value of the variable
+- **%4$x** - will give the 4th. value of the stack
+- **%4$30x** - 4.th value with a padding of 30 spaces (useful because **%n** will write the amount of printed characters to the stack)
+- to overwrite the value with **%n**, you can 'devide' the address so you dont have to have millions of spaces printed on the screen
+  - just do it in small steps and smaller numbers => 0x0806804d=0x08069cb0 => 0x0806804d=9cb0 / 0x0806804d+2=0806
+
 
 ### Global Offset Table
 
 - has the addresses of different functions
+- can be used with format string exploit to redirect code execution
 
 ### Global Linkage Table
 
