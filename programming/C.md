@@ -10,11 +10,11 @@ int variable = 0;
 
 variable = variable + 1;
 
-IS THE SAME AS
+**IS THE SAME AS**
 
 variable += 1;
 
-IS THE SAME AS
+**IS THE SAME AS**
 
 variable++;
 
@@ -34,6 +34,7 @@ while (true) {
 	printf("this is an endless loop");
 }
 
+
 for (int i = 0 ; i < 12 ; i++) {
 	printf("this will be printed 12 times");
 }
@@ -51,6 +52,7 @@ int main(int argc, char *argv[]) {
 	printf("text");
 }
 ```
+
 ### information
 
 - #include <stdio.h> - adds standard i/o library <br/>
@@ -59,5 +61,4 @@ int main(int argc, char *argv[]) {
 
 ## compile your program (in the terminal)
 
-$  gcc program.c -o program -Wall
- 
+$  gcc program.c -o program -Wall 
