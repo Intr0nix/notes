@@ -157,7 +157,8 @@ with open("file.txt","w") as textfile:
 
 ## Useful things
 
-- **#!/usr/bin/python2.7** - can start the program like every other one (./program)
+**#!/usr/bin/env python3**
+- ~~**#!/usr/bin/python2.7**~~ - can start the program like every other one (./program)
 - **import sys** - so you can use sys.argv or write to stderr
 - **python -c 'print "A"\*(4+16\*3+14)'** - prints A 4+16\*3+14 times
 
